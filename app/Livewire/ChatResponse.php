@@ -10,6 +10,8 @@ class ChatResponse extends Component
 
     public array $messages;
 
+    public string $response;
+
     public function mount()
     {
         $this->getResponse();
@@ -22,7 +24,7 @@ class ChatResponse extends Component
             'messages' => $this->messages,
         ]);
 
-        dd($response);
+        $this->response = $response->choices[0]->toArray()['message']['content'];
     }
     public function render()
     {
