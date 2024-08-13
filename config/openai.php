@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'secret' => env('OPENAI_SECRET'),
+    'key' => env('OPENAI_API_KEY'),
 ];
