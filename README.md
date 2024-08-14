@@ -16,6 +16,8 @@ It's using wire:stream to stream in ChatGPT responses as they arrive, by buildin
 Every message that is sent and every response is shown in the chat history. It also remembers the conversation context, though nothing is saved in a database. 
 It's using the [OpenAI PHP API client](https://github.com/openai-php/client), that allows you to interact with the OpenAI API.
 
+Since it is interacting with the OpenAI API, you will need to create an account at [OpenAI](https://openai.com/index/openai-api/) and generate an API Key.
+
 It also supports dark and light mode, depending on your system-preference.
 
 </section>
