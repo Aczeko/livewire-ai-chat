@@ -4,6 +4,8 @@
 - [Overview](#overview)
 - [Installation](#installation)
 - [Usage](#usage)
+  - [Model](#model)
+  - [Role](#role)
 - [Useful Links](#useful-links)
 
 ---
@@ -72,6 +74,8 @@ It also supports dark and light mode, depending on your system-preference.
 
 ## 🛠️ Usage
 
+<section id="model">
+
 ### Model
 
 Depending on which ChatGPT model you are using, you'll need to change it in the code.
@@ -85,6 +89,10 @@ $stream = app('openai')->chat()->createStreamed([
             'messages' => $this->messages,
         ]);
 ```
+
+</section>
+
+<section id="role">
 
 ### Role
 
@@ -111,6 +119,7 @@ public function mount()
     }
 ```
 
+</section>
 
 </section>
 
