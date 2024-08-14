@@ -21,6 +21,8 @@ It's using the [OpenAI PHP API client](https://github.com/openai-php/client), th
 
 Since it is interacting with the OpenAI API, you will need to create an account at [OpenAI](https://openai.com/index/openai-api/) and generate an API Key.
 
+The response that is sent by the OpenAI API, is also being rendered by [Spatie's Laravel-Markdown](https://github.com/spatie/laravel-markdown) package, so the markdown can be displayed correctly.
+
 It also supports dark and light mode, depending on your system-preference.
 
 </section>
