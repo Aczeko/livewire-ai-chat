@@ -9,11 +9,12 @@
 <section id="overview">
 
 ## 🔎 Overview
-This is a Trello clone with drag and drop sorting, built with Laravel Livewire.
+This is an AI chatbot using Livewire and ChatGPT.
 
-It has the ability to edit column titles inline, edit cards and add notes, archive cards and columns, and put them back on the board, as well as sort columns and cards, including moving cards around columns.
+It's using wire:stream to stream in ChatGPT responses as they arrive, by building a chat interface with Livewire.
 
-All items, like boards, columns and cards are saved in a MySQL database and are updated while they are being sorted.
+Every message that is sent and every response is shown in the chat history. It also remembers the conversation context, though nothing is saved in a database. 
+It's using the [OpenAI PHP API client](https://github.com/openai-php/client), that allows you to interact with the OpenAI API.
 
 It also supports dark and light mode, depending on your system-preference.
 
