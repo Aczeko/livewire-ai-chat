@@ -23,8 +23,6 @@ Since it is interacting with the OpenAI API, you will need to create an account 
 
 The response that is sent by the API, is also being rendered by [Spatie's Laravel-Markdown](https://github.com/spatie/laravel-markdown) package, so the markdown can be displayed correctly.
 
-It also supports dark and light mode, depending on your system-preference.
-
 </section>
 
 <section id="installation">
