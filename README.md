@@ -51,8 +51,14 @@ It also supports dark and light mode, depending on your system-preference.
     ```bash
     php artisan key:generate
     ```
+    
+6. Migrate the tables
+   
+    ```bash
+    php artisan migrate
+    ```
 
-6. Run your build process with:
+7. Run your build process with:
     ```bash
     npm run dev
     ```
