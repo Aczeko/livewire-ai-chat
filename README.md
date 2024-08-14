@@ -3,6 +3,7 @@
 ## Table of Contents
 - [Overview](#overview)
 - [Installation](#installation)
+- [Usage](#usage)
 - [Useful Links](#useful-links)
 
 ---
@@ -64,6 +65,24 @@ It also supports dark and light mode, depending on your system-preference.
     ```bash
     npm run dev
     ```
+
+</section>
+
+<section id="usage">
+
+## 🛠️ Usage
+
+Depending on which ChatGPT model you are using, you'll need to change it in the code.
+Currently, it is set to `GPT-3.5 Turbo`, since you're given a **limited** amount of free credits, so you can test out the bot, without having to upgrade to one of the paid plans. Though you should keep in mind, that OpenAI might have restrictions or changes in the free tier that apply to your account, limiting the number of requests you can make.
+
+If you do want to change the model, you can do that in the `ChatResponse.php` file:
+
+```php
+$stream = app('openai')->chat()->createStreamed([
+            'model' => 'gpt-3.5-turbo', // here you can change the model to your preference
+            'messages' => $this->messages,
+        ]);
+```
 
 </section>
 

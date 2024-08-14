@@ -21,7 +21,7 @@ class ChatResponse extends Component
     public function getResponse()
     {
         $stream = app('openai')->chat()->createStreamed([
-            'model' => 'gpt-3.5-turbo',
+            'model' => 'gpt-3.5-turbo', // here you can change the model to your preference
             'messages' => $this->messages,
         ]);
 
@@ -36,11 +36,7 @@ class ChatResponse extends Component
                 $content,
                 false
             );
-
         }
-
-
-
     }
     public function render()
     {
