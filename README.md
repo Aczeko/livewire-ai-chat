@@ -128,6 +128,7 @@ public function mount()
 ## 🔗 Useful Links
 - [Video-Tutorial for this AI Chatbot](https://codecourse.com/courses/create-an-ai-chat-bot-with-livewire-and-chatgpt)
 - [OpenAi PHP Package](https://github.com/openai-php/client)
+- [Spatie Laravel-Markdown package](https://github.com/spatie/laravel-markdown)
 
 </section>
 
