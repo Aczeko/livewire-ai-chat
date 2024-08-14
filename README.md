@@ -9,13 +9,7 @@
 <section id="overview">
 
 ## 🔎 Overview
-This is a Trello clone with drag and drop sorting, built with Laravel Livewire.
 
-It has the ability to edit column titles inline, edit cards and add notes, archive cards and columns, and put them back on the board, as well as sort columns and cards, including moving cards around columns.
-
-All items, like boards, columns and cards are saved in a MySQL database and are updated while they are being sorted.
-
-It also supports dark and light mode, depending on your system-preference.
 
 </section>
 
