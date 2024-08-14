@@ -14,7 +14,7 @@ class Chat extends Component
 
     public function mount()
     {
-        $this->messages[] = ['role' => 'system', 'content' => 'You are a friendly web developer here to help.'];
+        $this->messages[] = ['role' => 'system', 'content' => 'You are a friendly web developer here to help.']; // Change content to your liking
     }
 
     public function send()

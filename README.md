@@ -72,6 +72,8 @@ It also supports dark and light mode, depending on your system-preference.
 
 ## 🛠️ Usage
 
+### Model
+
 Depending on which ChatGPT model you are using, you'll need to change it in the code.
 Currently, it is set to `GPT-3.5 Turbo`, since you're given a **limited** amount of free credits, so you can test out the bot, without having to upgrade to one of the paid plans. Though you should keep in mind, that OpenAI might have restrictions or changes in the free tier that apply to your account, limiting the number of requests you can make.
 
@@ -83,6 +85,32 @@ $stream = app('openai')->chat()->createStreamed([
             'messages' => $this->messages,
         ]);
 ```
+
+### Role
+
+You can set up what role the bot should have and how it should communicate with you. 
+In the code, the bot is set as a "friendly web developer".
+
+To change the bot's role, you need to change the `content inside the `mount()` method in the `Chat.php` file:
+
+```php
+public function mount()
+    {
+        $this->messages[] = ['role' => 'system', 'content' => 'You are a friendly web developer here to help.']; // Change content to your liking
+    }
+```
+
+If you want the bot to always start the conversation with a certain word or message, you can also add that to the `content` inside the `mount()` method:
+
+#### Example
+
+```php
+public function mount()
+    {
+        $this->messages[] = ['role' => 'system', 'content' => 'You are a friendly web developer here to help. Always start the conversation with Hey!']; // Change content to your liking
+    }
+```
+
 
 </section>
 
