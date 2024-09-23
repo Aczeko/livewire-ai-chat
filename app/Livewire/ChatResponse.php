@@ -4,7 +4,6 @@ namespace App\Livewire;
 
 use Illuminate\Support\Arr;
 use Livewire\Component;
-use Spatie\LaravelMarkdown\MarkdownRenderer;
 
 class ChatResponse extends Component
 {
@@ -26,22 +25,19 @@ class ChatResponse extends Component
             'messages' => $this->messages,
         ]);
 
-        foreach ($stream as $response)
-        {
+        foreach ($stream as $response) {
             $content = Arr::get($response->choices[0]->toArray(), 'delta.content');
 
-            // Process the content using Markdown
-            $markdown = app(MarkdownRenderer::class)->toHtml($content);
-
-            $this->response .= $markdown;
+            $this->response .= $content;
 
             $this->stream(
-                'stream-' . $this->getId(),
-                $markdown,
+                'stream-'.$this->getId(),
+                $content,
                 false
             );
         }
     }
+
     public function render()
     {
         return view('livewire.chat-response');
